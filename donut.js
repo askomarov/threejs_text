@@ -59,7 +59,6 @@ function init(geometry) {
   scene.add(meshFlower);
   geometry.computeBoundingBox();
   var box = geometry.boundingBox;
-  console.log(box.max.x);
   meshFlower.position.x = 1.5;
   meshFlower.rotation.z = Math.PI * 0.15;
   return meshFlower;
@@ -74,7 +73,6 @@ function animate() {
   if (meshFlower) {
     meshFlower.rotation.z -= 0.01;
   }
-  console.log(meshFlower);
 }
 window.addEventListener('DOMContentLoaded', ()=>{
   loader.load("./assets/models/A_10.obj", (obj) => {
