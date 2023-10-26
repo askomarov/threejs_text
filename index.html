@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="my-canvas"></canvas>
+    <main class="app">
+      <section class="section-start">
+        <div class="lang-switcher">
+          <div class="lang-switcher__button">
+            <svg
+              class="lang-switcher__button-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.25 9C17.25 4.44365 13.5563 0.75 9 0.75C4.44365 0.75 0.75 4.44365 0.75 9C0.75 13.5563 4.44365 17.25 9 17.25C13.5563 17.25 17.25 13.5563 17.25 9ZM2.73174 6.49089C3.41677 4.7811 4.7811 3.41677 6.49089 2.73174C6.08973 3.50615 5.77504 4.47168 5.56294 5.56294C4.47168 5.77504 3.50615 6.08973 2.73174 6.49089ZM11.5091 2.73174C11.9103 3.50615 12.225 4.47168 12.4371 5.56295C13.5283 5.77504 14.4938 6.08973 15.2683 6.49089C14.5832 4.7811 13.2189 3.41677 11.5091 2.73174ZM2.25 9C2.25 8.32556 3.47151 7.59375 5.33586 7.15364C5.27929 7.74811 5.25 8.36625 5.25 9C5.25 9.63375 5.27929 10.2519 5.33586 10.8464C3.47151 10.4063 2.25 9.67444 2.25 9ZM12.75 9C12.75 9.63375 12.7207 10.2519 12.6641 10.8464C14.5285 10.4063 15.75 9.67444 15.75 9C15.75 8.32556 14.5285 7.59375 12.6641 7.15364C12.7207 7.74811 12.75 8.36625 12.75 9ZM2.73174 11.5091C3.50615 11.9103 4.47168 12.225 5.56294 12.4371C5.77504 13.5283 6.08973 14.4938 6.49089 15.2683C4.7811 14.5832 3.41677 13.2189 2.73174 11.5091ZM12.4371 12.4371C12.225 13.5283 11.9103 14.4938 11.5091 15.2683C13.2189 14.5832 14.5832 13.2189 15.2683 11.5091C14.4938 11.9103 13.5283 12.225 12.4371 12.4371ZM6.75 9C6.75 8.25731 6.79658 7.54479 6.87947 6.87947C7.54479 6.79658 8.25731 6.75 9 6.75C9.74269 6.75 10.4552 6.79658 11.1205 6.87947C11.2034 7.54479 11.25 8.25731 11.25 9C11.25 9.74269 11.2034 10.4552 11.1205 11.1205C10.4552 11.2034 9.74269 11.25 9 11.25C8.25731 11.25 7.54479 11.2034 6.87947 11.1205C6.79658 10.4552 6.75 9.74269 6.75 9ZM7.15364 12.6641C7.59375 14.5285 8.32556 15.75 9 15.75C9.67444 15.75 10.4063 14.5285 10.8464 12.6641C10.2519 12.7207 9.63375 12.75 9 12.75C8.36625 12.75 7.74811 12.7207 7.15364 12.6641ZM9 2.25C8.32556 2.25 7.59375 3.47151 7.15364 5.33586C7.74811 5.27928 8.36625 5.25 9 5.25C9.63375 5.25 10.2519 5.27928 10.8464 5.33586C10.4063 3.47151 9.67444 2.25 9 2.25Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="lang-switcher__button-lang">RU</span>
+          </div>
+          <ul class="lang-switcher__langs-list">
+            <li class="lang-switcher__lang-list-item" data-value="ru">
+              Русский (RU)
+            </li>
+            <li class="lang-switcher__lang-list-item" data-value="en">
+              English (EN)
+            </li>
+          </ul>
+          <input type="hidden" name="selected-lang" value="ru" />
+        </div>
+
+        <h1>Horizontal "<code>containerAnimation</code>"</h1>
+        <p class="text-element" data-translate="text">
+          Scroll this page vertically and you'll see a horizontal fake-scrolling
+          section where a container is animated on the x-axis using a
+          ScrollTrigger animation. With
+          <code>containerAnimation</code> you can trigger animations when
+          certain elements <i>inside</i> that container enter the viewport
+          horizontally! It's like a ScrollTrigger inside of a ScrollTrigger. 🤯
+        </p>
+        <p class="replace-text">
+          where a container is animated on the x-axis using a ScrollTrigger
+          animation. With
+        </p>
+        <p class="new-text"></p>
+        <div class="box scroll-down">
+          <a class="link" href="#panel-blue">scroll-down</a>
+        </div>
+      </section>
+      <div class="container">
+        <div id="panel-blue" class="panel blue">
+          Scroll down to animate horizontally &gt;
+        </div>
+        <div id="panel-red" class="panel red">
+          panel red
+          <div class="box box-1">box-1</div>
+        </div>
+        <div class="panel gray">
+          panel gray
+          <div class="box box-2">box-2</div>
+        </div>
+        <div class="panel green">panel green</div>
+      </div>
+      <a href="https://basketball.3d">https://askomarov.com</a>
+      <section class="section-final">section final</section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="init-lang-switcher.js" type="module"></script>
+    <script src="app.js"></script>
+    <script src="donut.js" type="module"></script>
+  </body>
+</html>
